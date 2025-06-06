@@ -1,8 +1,9 @@
 import React from "react"
 import { signOut } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js"
+import DefaultPic from "../assets/default.jpeg"
 
 export default function LoggedInView({user, auth}) {
-    const photoURL = user.photoURL ?? "assets/default.jpeg"
+    const photoURL = user.photoURL ?? DefaultPic
 
     return (
         <div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: "1rem"}}>
