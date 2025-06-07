@@ -9,13 +9,12 @@ import { getAuth,
 
 /* === Firebase Setup === */
 const firebaseConfig = {
-  apiKey: "AIzaSyC3JfDWRpFegL2xV5_vUmE5p_0YRrNWoU4",
-  authDomain: "fir-project-e955e.firebaseapp.com",
-  databaseURL: "https://fir-project-e955e-default-rtdb.firebaseio.com",
-  projectId: "fir-project-e955e",
-  storageBucket: "fir-project-e955e.appspot.com",
-  messagingSenderId: "67657787043",
-  appId: "1:67657787043:web:ea8982f313ffd57e910116"
+  apiKey: "AIzaSyD0APTZ6o07VF_AXNoFQSFLctlpMQkHkeQ",
+  authDomain: "seproject2061.firebaseapp.com",
+  projectId: "seproject2061",
+  storageBucket: "seproject2061.firebasestorage.app",
+  messagingSenderId: "84060211781",
+  appId: "1:84060211781:web:5e57b53b67ee29da5e712c"
 }
 
 const app = initializeApp(firebaseConfig)
@@ -34,7 +33,7 @@ export default function App() {
     }, [])
 
     if (loggedIn) {
-     return <LoggedInView user={user} auth={auth} />
+     return <LoggedInView user={user} auth={auth} app={app} />
     }
 
     return <LoginPage auth={auth} />

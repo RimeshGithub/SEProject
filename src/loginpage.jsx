@@ -53,7 +53,7 @@ export default function LoginPage({auth}) {
   return (
     <div className="login-container">
       <div className="login-form-wrapper">
-        <h2 className="login-title">Project Title</h2>
+        <h2 className="login-title">Tenant Hub</h2>
         <form className="login-form">
           <input
             type="email"
