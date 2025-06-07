@@ -299,7 +299,7 @@ export default function LoggedInView({ user, auth }) {
     <div className="loggedin-container">
       {/* Header */}
       <div className="dashboard-header">
-        <h2>Tenant Hub</h2>
+        <h2>Rent Assist</h2>
         <button className="btn btn-logout" onClick={() => signOut(auth)}>
           Log Out
         </button>
