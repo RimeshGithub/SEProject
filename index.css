@@ -450,11 +450,6 @@
   font-weight: bold;
 }
 
-.chat-input-group {
-  display: flex;
-  gap: 10px;
-}
-
 .loading {
   text-align: center;
   padding: 30px;
@@ -468,10 +463,9 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 20px 0px 40px;
+  padding: 20px 20px 40px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 12px;
-  width:500px;
   position: absolute;
   top: 50%;
   left: 50%;

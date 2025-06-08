@@ -376,7 +376,7 @@ export default function LoggedInView({ user, auth }) {
                   className={`room-item ${r.id === selectedRoom?.id ? "selected" : ""}`}
                 >
                   <span>{r.name}</span>
-                  <span>({r.members.length} tenants)</span>
+                  <span>({r.members.length} tenant{r.members.length === 1 ? "" : "s"})</span>
                 </div>
               ))}
             </div>
@@ -528,7 +528,7 @@ export default function LoggedInView({ user, auth }) {
                 ))}
                 <div ref={chatEndRef} />
               </div>
-              <div className="chat-input-group">
+              <div className="form-group">
                 <input
                   type="text"
                   value={newMessage}
